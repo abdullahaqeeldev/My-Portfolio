@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--=============== REMIXICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <title>Responsive dropdown menu - Bedimcode</title>
+</head>
+<link rel="stylesheet" href="portfolio.css">
+
+<body>
+
+  <!--=============== HEADER ===============-->
+  <header class="header">
+    <nav class="nav container">
+      <div class="nav__data">
+        <a href="#" class="nav__logo">
+          <i class="ri-planet-line"></i> Abdullah Aqeel | Portfolio
+        </a>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line nav__burger"></i>
+          <i class="ri-close-line nav__close"></i>
+        </div>
+      </div>
+
+      <!--=============== NAV MENU ===============-->
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link">Home</a></li>
+
+          <li><a href="#projects" class="nav__link">Project</a></li>
+          </li>
+
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+
+          <!--=============== DROPDOWN 2 ===============-->
+          <li class="dropdown__item">
+            <div class="nav__link">
+              Users <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+            </div>
+
+            <ul class="dropdown__menu">
+              <li>
+                <a href="#contact" class="dropdown__link">
+                  <i class="ri-user-line"></i> Profiles
+                </a>
+              </li>
+
+              <li>
+                <a href="#contact" class="dropdown__link">
+                  <i class="ri-lock-line"></i> Accounts
+                </a>
+              </li>
+
+              <li>
+                <a href="#contact" class="dropdown__link">
+                  <i class="ri-message-3-line"></i> Messages
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+<!-- header section -->
+  </header>
+  <section id="home" class="hero">
+    <!-- heading -->
+    <div class="details">
+      <h1 class="heading">Hi there, I'm Abdullah👋</h1>
+      <h2>Frontend Developer</h2>
+      <p>
+        I build clean, responsive and user-friendly websites using
+        HTML, CSS, JavaScript and React.
+      </p>
+<!-- hero buttons -->
+      <div class="hero-buttons">
+        <a href="#projects">
+          <button class="ui-btn">
+            <span>
+              View my Work
+            </span>
+          </button>
+        </a>
+        <!-- hero button 2  -->
+        <a href="#about">
+          </button>
+          <button class="animated-button">
+            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+              </path>
+            </svg>
+            <span class="text">Aboutme</span>
+            <span class="circle"></span>
+            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+              </path>
+            </svg>
+          </button>
+        </a>
+      </div>
+    </div>
+    <!-- image container -->
+    <div class="img">
+      <img src="coding.gif" alt="">
+    </div>
+  </section>
+<!-- projects section -->
+  <section id="projects" class="projects" data-aos="fade-left">
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="projects-container">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="Screenshot_4.png" alt="Weather App">
+        <!-- Project image -->
+
+        <div class="project-content">
+          <h3>Weather App</h3>
+          <p>
+            A weather application that fetches real-time data using an API
+            and displays temperature, humidity and conditions.
+          </p>
+<!-- tech stack -->
+          <div class="tech-stack">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>API</span>
+          </div>
+<!-- project links -->
+          <div class="project-links">
+            <a href="https://abdullahaqeeldev.github.io/javascript-real-time-weather-app/javascript-JSON-practice.html"
+              target="_blank" class="btn">Live Demo</a>
+            <a href="https://github.com/abdullahaqeeldev/javascript-real-time-weather-app" target="_blank"
+              class="btn-outline">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="Screenshot_1.png" alt="Password Generator">
+<!-- Project image -->
+        <div class="project-content">
+          <h3>Password Generator</h3>
+          <p>
+            A secure password generator that allows users to create
+            strong and random passwords instantly.
+          </p>
+<!-- tech stack -->
+          <div class="tech-stack">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+<!-- project links -->
+          <div class="project-links">
+            <a href="" target="_blank" class="btn">Live Demo</a>
+            <a href="https://github.com/abdullahaqeeldev/javascript-passwordgenerator" target="_blank"
+              class="btn-outline">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="Screenshot_3.png" alt="Todo App">
+<!-- Project image -->
+        <div class="project-content">
+          <h3>Todo App</h3>
+          <p>
+            A responsive todo application with local storage support
+            to save tasks even after refreshing the page.
+          </p>
+<!-- tech stack -->
+          <div class="tech-stack">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>LocalStorage</span>
+          </div>
+<!-- project links -->
+          <div class="project-links">
+            <a href="https://abdullahaqeeldev.github.io/javascript-todolist-practice/javascript-todolistapp-practice.html"
+              target="_blank" class="btn">Live Demo</a>
+            <a href="https://github.com/abdullahaqeeldev/javascript-todolist-practice" target="_blank"
+              class="btn-outline">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 4 -->
+      <div class="project-card">
+        <img src="Screenshot_5.png" alt="Quiz App">
+<!-- Project image -->
+        <div class="project-content">
+          <h3>Quiz App</h3>
+          <p>
+            A fun quiz application where users can answer multiple-choice questions,
+            see their score, and get instant feedback.
+          </p>
+<!-- tech stack -->
+          <div class="tech-stack">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+<!-- project links -->
+          <div class="project-links">
+            <a href="https://abdullahaqeeldev.github.io/javascript-quizapp-practice/javascript-quizapp-prctice.html"
+              target="_blank" class="btn">Live Demo</a>
+            <a href="https://github.com/abdullahaqeeldev/javascript-quizapp-practice" target="_blank"
+              class="btn-outline">GitHub</a>
+          </div>
+        </div>
+      </div>
+<!-- Project 4 -->
+      <div class="project-card">
+        <img src="Screenshot_6.png" alt="Guess Number Game">
+<!-- Project image -->
+        <div class="project-content">
+          <h3>Guess Number Game</h3>
+          <p>
+            A simple interactive game where users guess a random number,
+            get hints if it’s too high or low, and can try again.
+          </p>
+<!-- tech stack -->
+          <div class="tech-stack">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+<!-- project links -->
+          <div class="project-links">
+            <a href="https://abdullahaqeeldev.github.io/javscript-guess-number-game/javscript-guessnumber.html"
+              target="_blank" class="btn">Play Now</a>
+            <a href="https://github.com/abdullahaqeeldev/javscript-guess-number-game" target="_blank"
+              class="btn-outline">GitHub</a>
+          </div>
+        </div>
+      </div>
+<!-- Project 4 -->
+      <div class="project-card">
+        <img src="Screenshot_7.png" alt="Calculator App">
+<!-- Project image -->
+        <div class="project-content">
+          <h3>Calculator App</h3>
+          <p>
+            A fully functional calculator app that supports basic arithmetic
+            operations with a clean and responsive design.
+          </p>
+<!-- tech stack -->
+          <div class="tech-stack">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+<!-- project links -->
+          <div class="project-links">
+            <a href="https://abdullahaqeeldev.github.io/javascript-functional-calculator-prractice/jaavscript-calculator-project.html"
+              target="_blank" class="btn">Live Demo</a>
+            <a href="https://github.com/abdullahaqeeldev/javascript-functional-calculator-prractice" target="_blank"
+              class="btn-outline">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+<!-- About Section -->
+  <section id="about" class="about" data-aos="fade-up">
+    <div class="container about-container">
+      <div class="about-img">
+        <img src="4884785.jpg" alt="Abdullah Aqeel">
+      </div>
+<!-- About Image -->
+
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>
+          Hi! I’m <strong>Abdullah Aqeel</strong>, a passionate Frontend Developer.
+          I specialize in building clean, responsive, and user-friendly websites using
+          <strong>HTML, CSS, JavaScript, and React</strong>.
+          Currently, I am honing my skills by creating real-world projects like dashboards and interactive web apps.
+        </p>
+
+        <p>
+          I love solving problems, learning new technologies, and turning ideas into interactive web experiences.
+        </p>
+
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+    </div>
+  </section>
+<!-- Journey Section -->
+  <section id="journey" class="journey" data-aos="fade-right">
+    <div class="container journey-container">
+      <h2>My Journey</h2>
+      <p class="journey-intro">
+        I started learning web development from scratch and gradually built my skills in HTML, CSS, JavaScript,
+        Bootstrap, and React. Here’s a quick overview of my journey and how I got to where I am today.
+      </p>
+<!-- Journey Cards -->
+
+      <div class="journey-cards">
+        <!-- Self-Learning Card -->
+        <div class="journey-card">
+          <h3>Self-Learning</h3>
+          <p>
+            I practiced daily by building small projects like calculators, weather apps, and games. Step by step, I
+            mastered core frontend technologies.
+          </p>
+        </div>
+
+        <!-- Online Courses Card -->
+        <div class="journey-card">
+          <h3>Online Courses</h3>
+          <p>
+            I learned from trusted platforms like FreeCodeCamp,saylani welfare trust it center, YouTube tutorials, and
+            other online resources to understand modern frontend development.
+          </p>
+        </div>
+
+        <!-- Practice Projects Card -->
+        <div class="journey-card">
+          <h3>Hands-on Projects</h3>
+          <p>
+            I practiced building real-world projects like portfolios, dashboards, and interactive web apps to solidify
+            my skills and showcase my work.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Career Section -->
+  <section id="career" class="career" data-aos="fade-left">
+    <div class="container career-container">
+      <h2>Looking for Opportunities</h2>
+      <p class="career-intro">
+        I am currently seeking <strong>internships or junior frontend developer roles</strong> where I can apply my
+        skills, learn from real projects, and contribute to building amazing web experiences.
+      </p>
+<!-- Career Cards -->
+      <div class="career-cards">
+        <div class="career-card">
+          <i class="ri-briefcase-line career-icon"></i>
+          <h3>Internships</h3>
+          <p>
+            I want to gain hands-on experience working with a professional team on real projects to improve my skills.
+          </p>
+        </div>
+<!-- Career Cards -->
+        <div class="career-card">
+          <i class="ri-team-line career-icon"></i>
+          <h3>Junior Roles</h3>
+          <p>
+            Looking for entry-level frontend developer positions where I can contribute and learn new technologies.
+          </p>
+        </div>
+<!-- Career Cards -->
+        <div class="career-card">
+          <i class="ri-lightbulb-line career-icon"></i>
+          <h3>Continuous Learning</h3>
+          <p>
+            I am passionate about constantly improving, learning new frameworks, and building real-world applications.
+          </p>
+        </div>
+      </div>
+
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </section>
+
+<!-- Contact Section -->
+  <section id="contact" class="contact" data-aos="fade-up">
+    <div class="container contact-container">
+      <h2>Contact Me</h2>
+      <p class="contact-intro">
+        I’d love to hear from you! Whether it’s a question, project opportunity, or just a hello, feel free to reach
+        out.
+      </p>
+<!-- Contact Info -->
+      <div class="contact-info">
+        <div class="contact-card">
+          <i class="ri-mail-line contact-icon"></i>
+          <h3>Email</h3>
+          <p>abdullahaqeel777lucky
+            @gmail.com</p>
+        </div>
+<!-- Contact Info -->
+        <div class="contact-card">
+          <i class="ri-phone-line contact-icon"></i>
+          <h3>Phone</h3>
+          <p>+92 331 3328637</p>
+        </div>
+<!-- Contact Info -->
+        <div class="contact-card">
+          <i class="ri-map-pin-line contact-icon"></i>
+          <h3>Location</h3>
+          <p>Pakistan</p>
+        </div>
+      </div>
+<!-- Social Links -->
+      <div class="contact-socials">
+        <a href="https://github.com/yourusername" target="_blank"><i class="ri-github-line"></i></a>
+        <a href="https://www.linkedin.com/in/yourusername" target="_blank"><i class="ri-linkedin-line"></i></a>
+        <a href="https://twitter.com/yourusername" target="_blank"><i class="ri-twitter-line"></i></a>
+      </div>
+
+      <form class="contact-form" action="mailto:abdullahaqeel777lucky@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer" data-aos="fade-bottom">
+    <div class="container footer-container">
+      <a href="#" class="footer-logo">
+        <i class="ri-planet-line"></i> Abdullah Aqeel
+      </a>
+<!-- Footer Text -->
+      <p class="footer-text">
+        Frontend Developer | Currently looking for internships & junior roles
+      </p>
+
+      <div class="footer-socials">
+        <a href="https://github.com/yourusername" target="_blank"><i class="ri-github-line"></i></a>
+        <a href="https://www.linkedin.com/in/yourusername" target="_blank"><i class="ri-linkedin-line"></i></a>
+        <a href="https://twitter.com/yourusername" target="_blank"><i class="ri-twitter-line"></i></a>
+      </div>
+<!-- Footer Copy -->
+      <p class="footer-copy">
+        &copy; 2026 Abdullah Aqeel. All rights reserved.
+      </p>
+    </div>
+  </footer>
+  <a href="#home" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script src="portfolio.js"></script>
+
+
+</script>
+
+</html>
